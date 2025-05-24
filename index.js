@@ -6,7 +6,7 @@ app.use(cors());
 
 app.get('/recherche', async (req, res) => {
   const plaque = req.query.plaque;
-  const token = 'TON_TOKEN_API'; // Remplace ici par ton vrai token
+  const token = 'TokenDemo2025A&pays=FR'; // Remplace ici par ton vrai token
   const url = `https://api.apiplaqueimmatriculation.com/get-vehicule-info?immatriculation=${plaque}&token=${token}&pays=FR`;
 
   try {
